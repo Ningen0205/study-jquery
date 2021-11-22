@@ -5,11 +5,15 @@ import $ from "jquery";
 */
 $(() => {
   // element selector
-  $("button");
-
+  // $("button");
   // id selector
-  $("title");
-
+  // $("title");
   // class selector
-  $(".test");
+  // $(".test");
+
+  const el = document.getElementById("title");
+
+  const textNode = document.createTextNode("テキスト");
+
+  el?.appendChild(textNode);
 });
